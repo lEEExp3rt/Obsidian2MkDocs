@@ -1,0 +1,18 @@
+# Configuration file for Obsidian2MkDocs.
+indent: 4
+frontmatter:
+  - "tags"
+code_block:
+  highlight_keywords:
+    - "hl"
+    - "error"
+    - "warning"
+    - "info"
+ignores:
+  - ".vscode/"
+  - ".git/"
+  - "__pycache__/"
+  - ".obsidian/"
+  - "Templates/"
+  - "Resumes/"
+  - "Papers"
