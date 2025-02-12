@@ -43,6 +43,8 @@ python main.py [-h] [-c CONFIG] [-o] [--debug] src [dest]
 
 ### Configurations
 
+配置文件应该在当前工作目录下，默认名为`configs.yml`
+
 配置文件应该包含以下内容：
 
 ```yaml
