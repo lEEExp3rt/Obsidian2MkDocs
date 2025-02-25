@@ -8,7 +8,6 @@ This module processes the frontmatter of the markdown files.
 """
 
 from ..parser import ContentType
-import re
 import yaml
 
 

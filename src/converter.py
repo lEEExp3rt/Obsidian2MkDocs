@@ -12,6 +12,7 @@ from .parser import parse_content
 from .frontmatters import frontmatter
 from .admonitions import admonition
 from .codes import code_block, inline_code
+from .links import pdf
 
 
 def convert(src: str, dest: str, configs: dict, statistics: statistics.Statistics ,overwrite: bool = False) -> None:
@@ -41,6 +42,7 @@ def convert(src: str, dest: str, configs: dict, statistics: statistics.Statistic
         body = admonition.convert(body, types, configs['indent'])
         body = code_block.convert(body, types, configs['code_block']['highlight_keywords'])
         body = inline_code.convert(body, types)
+        body = pdf.convert(body, types, configs['pdf']['height'])
         # End parsing.
         return file_manager.write_output(dest, header + body, overwrite)
 

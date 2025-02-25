@@ -1,6 +1,6 @@
 # Obsidian2MkDocs
 
-**Obsidian2MkDocs**是用于将 Obsidian 文档导出为 MkDocs 文档的脚本工具，它是一套基于文本匹配的转化工具，能够把你的 Obsidian 笔记转化为符合 MkDocs 笔记
+**Obsidian2MkDocs** 是用于将 Obsidian 文档导出为 MkDocs 文档的脚本工具，它是一套基于文本匹配的转化工具，能够把你的 Obsidian 笔记转化为符合 MkDocs 笔记
 
 ## Features
 
@@ -8,6 +8,7 @@
     - 提示块转化
     - 代码块转化
     - 行内代码转化
+    - 嵌入PDF转化
 - 批量导出
     - 转化单个Markdown文件
     - 批量导出指定目录下的所有 Obsidian 文档
@@ -58,6 +59,8 @@ code_block: # 代码块配置
     - "error"
     - "warning"
     - "info"
+pdf: # PDF嵌入配置
+  height: 800 # PDF阅读器默认高度
 ignores: # 忽略文件列表，遵守.gitignore语法
   - ".vscode/"
   - ".git/"
@@ -97,6 +100,11 @@ ignores: # 忽略文件列表，遵守.gitignore语法
 关于代码块，这里是使用了一个 Obsidian 的插件 [Obsidian-Code-Styler](https://github.com/mayurankv/Obsidian-Code-Styler)，我觉得这个插件能够更多丰富代码块的内容，比如添加代码块标题、显示行号、高亮等，也和 MkDocs 有很大相似之处，所以我的代码块转化是基于这个插件的
 
 最后，希望这个工具能够对您有些许帮助，如果您在使用过程中发现任何 bug 或者有更好的建议，欢迎提交 Issue 或 Pull Request ，我会尽量尽快解决，或者接受您的建议，感谢您的支持！
+
+## Todos
+
+- [ ] 页内锚点转化
+- [ ] Tabs转化
 
 ## Structure
 

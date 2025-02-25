@@ -37,6 +37,10 @@ def load_config(config_file: str) -> dict:
         raise KeyError(f"Missing 'code_block' in configuration file {config_file}!!!")
     if 'highlight_keywords' not in configs['code_block']:
         raise KeyError(f"Missing 'code_block.highlight_keywords' in configuration file {config_file}!!!")
+    if 'pdf' not in configs:
+        raise KeyError(f"Missing 'pdf' in configuration file {config_file}!!!")
+    if 'height' not in configs['pdf']:
+        raise KeyError(f"Missing 'pdf.height' in configuration file {config_file}!!!")
     if 'ignores' not in configs:
         raise KeyError(f"Missing 'ignores' in configuration file {config_file}!!!")
     return configs

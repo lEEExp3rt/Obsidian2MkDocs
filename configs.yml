@@ -1,0 +1,20 @@
+# Configuration file for Obsidian2MkDocs.
+# This is a demo.
+indent: 4
+frontmatter:
+  - "tags"
+  - "date"
+code_block:
+  highlight_keywords:
+    - "hl"
+    - "error"
+    - "warning"
+    - "info"
+pdf:
+  height: 800
+ignores:
+  - ".vscode/"
+  - ".git/"
+  - "__pycache__/"
+  - ".obsidian/"
+  - ".gitignore"

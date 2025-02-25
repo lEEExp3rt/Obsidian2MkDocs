@@ -89,7 +89,7 @@ def parse_content(lines: list[str]) -> list[dict]:
             output.append({
                 ContentType.ADMONITION: indent,
                 ContentType.CODE_BLOCK: code > 0,
-                ContentType.PLAINTEXT: True if not (indent or code) else False,
+                ContentType.PLAINTEXT: True if not code else False,
                 ContentType.FRONTMATTER: False
             })
         
